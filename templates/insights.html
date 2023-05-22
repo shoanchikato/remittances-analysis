@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Remittances Insights</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Remittances Insights</h1>
+      <p>Total Amount Sent: {{ insights['Total Amount Sent'] }}</p>
+      <p>Total Transactions: {{ insights['Total Transactions'] }}</p>
+      <h2>Payment Methods:</h2>
+      <ul>
+        {% for method, count in insights['Payment Methods'].items() %}
+          <li>{{ method }}: {{ count }}</li>
+        {% endfor %}
+      </ul>
+      <h2>Sending Countries:</h2>
+      <ul>
+        {% for country, count in insights['Sending Countries'].items() %}
+          <li>{{ country }}: {{ count }}</li>
+        {% endfor %}
+      </ul>
+      <h2>Receiving Countries:</h2>
+      <ul>
+        {% for country, count in insights['Receiving Countries'].items() %}
+          <li>{{ country }}: {{ count }}</li>
+        {% endfor %}
+      </ul>
+      <h2>Transaction Statuses:</h2>
+      <ul>
+        {% for status, count in insights['Transaction Statuses'].items() %}
+          <li>{{ status }}: {{ count }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>

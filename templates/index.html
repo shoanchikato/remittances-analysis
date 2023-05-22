@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Upload CSV File</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .error-message {
+        color: red;
+        margin-bottom: 10px;
+      }
+
+      .file-input {
+        margin-bottom: 10px;
+      }
+
+      .submit-button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Upload a CSV File</h1>
+      {% if error %}
+        <p class="error-message">{{ error }}</p>
+      {% endif %}
+      <form method="POST" enctype="multipart/form-data">
+        <input class="file-input" type="file" name="file" accept=".csv">
+        <input class="submit-button" type="submit" value="Upload">
+      </form>
+    </div>
+  </body>
+</html>

@@ -26,6 +26,11 @@
         li {
             margin-bottom: 5px;
         }
+
+        .graph {
+            margin-top: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -33,29 +38,25 @@
     <h2>Summary:</h2>
     <p>Total Amount Sent: {{ insights['Total Amount Sent'] }}</p>
     <p>Total Transactions: {{ insights['Total Transactions'] }}</p>
-    <h2>Payment Methods:</h2>
-    <ul>
-        {% for method, count in insights['Payment Methods'].items() %}
-        <li>{{ method }}: {{ count }}</li>
-        {% endfor %}
-    </ul>
-    <h2>Sending Countries:</h2>
-    <ul>
-        {% for country, count in insights['Sending Countries'].items() %}
-        <li>{{ country }}: {{ count }}</li>
-        {% endfor %}
-    </ul>
-    <h2>Receiving Countries:</h2>
-    <ul>
-        {% for country, count in insights['Receiving Countries'].items() %}
-        <li>{{ country }}: {{ count }}</li>
-        {% endfor %}
-    </ul>
-    <h2>Transaction Statuses:</h2>
-    <ul>
-        {% for status, count in insights['Transaction Statuses'].items() %}
-        <li>{{ status }}: {{ count }}</li>
-        {% endfor %}
-    </ul>
+    
+    <div class="graph">
+        <h2>Payment Methods:</h2>
+        <img src="data:image/png;base64,{{ insights['Payment Methods Graph'] }}" alt="Payment Methods Graph">
+    </div>
+
+    <div class="graph">
+        <h2>Sending Countries:</h2>
+        <img src="data:image/png;base64,{{ insights['Sending Countries Graph'] }}" alt="Sending Countries Graph">
+    </div>
+
+    <div class="graph">
+        <h2>Receiving Countries:</h2>
+        <img src="data:image/png;base64,{{ insights['Receiving Countries Graph'] }}" alt="Receiving Countries Graph">
+    </div>
+
+    <div class="graph">
+        <h2>Transaction Statuses:</h2>
+        <img src="data:image/png;base64,{{ insights['Transaction Statuses Graph'] }}" alt="Transaction Statuses Graph">
+    </div>
 </body>
 </html>

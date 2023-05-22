@@ -73,14 +73,14 @@ Date,Amount Sent,Name,Surname,Transaction Status,Time,Payment Method,Reason for 
 2028-12-01,630,Sophie,Green,Completed,15:40:00,Cash,Investment,USA,Philippines,Mobile Wallet
 2029-01-01,560,Ava,Adams,Completed,09:25:00,Bank Transfer,Family Support,Canada,Nigeria,Bank Deposit
 2029-02-01,740,William,Hill,Completed,11:50:00,Online Payment,Education,Australia,China,Cash Pickup
-2029-03-01,480,Lucas,Thomas,Completed,14:30:00,Bank Transfer,Family Support,USA,Mexico,Mobile Wallet
+2029-03-01,480,Lucas,Thomas,Pending,14:30:00,Bank Transfer,Family Support,USA,Mexico,Mobile Wallet
 2029-04-01,710,Sophia,King,Completed,16:55:00,Cash,Investment,UK,Philippines,Bank Deposit
 2029-05-01,550,Elijah,Wright,Completed,09:40:00,Online Payment,Family Support,Canada,India,Cash Pickup
 2029-06-01,910,Isabella,Carter,Completed,12:15:00,Bank Transfer,Education,USA,China,Bank Deposit
 2029-07-01,430,Logan,Robinson,Completed,14:50:00,Online Payment,Family Support,Australia,Nigeria,Mobile Wallet
 2029-08-01,980,Ava,Miller,Completed,16:25:00,Cash,Investment,Germany,Philippines,Cash Pickup
 2029-09-01,700,Liam,Anderson,Completed,10:20:00,Online Payment,Family Support,UK,Mexico,Bank Deposit
-2029-10-01,820,Sophia,Walker,Completed,12:45:00,Bank Transfer,Education,Canada,India,Mobile Wallet
+2029-10-01,820,Sophia,Walker,Pending,12:45:00,Bank Transfer,Education,Canada,India,Mobile Wallet
 2029-11-01,470,Emily,White,Completed,14:15:00,Cash,Family Support,USA,China,Cash Pickup
 2029-12-01,630,William,Harris,Completed,16:40:00,Online Payment,Investment,UK,Philippines,Bank Deposit
 2030-01-01,580,Isabella,Clark,Completed,09:35:00,Bank Transfer,Family Support,Canada,Nigeria,Cash Pickup

@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Remittances Data Insights</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
+      body {
+        font-family: Arial, sans-serif;
+      }
 
-        h1 {
-            text-align: center;
-        }
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
 
-        form {
-            text-align: center;
-        }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
 
-        input[type="file"] {
-            margin-top: 10px;
-        }
+      .error-message {
+        color: red;
+        margin-bottom: 10px;
+      }
 
-        input[type="submit"] {
-            margin-top: 10px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
+      .file-input {
+        margin-bottom: 10px;
+      }
+
+      .submit-button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
     </style>
-</head>
-<body>
-    <h1>Remittances Data Insights</h1>
-    {% if error %}
-    <p>{{ error }}</p>
-    {% endif %}
-    <form method="POST" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".csv">
-        <br><br>
-        <input type="submit" value="Upload">
-    </form>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Upload a CSV File</h1>
+      {% if error %}
+        <p class="error-message">{{ error }}</p>
+      {% endif %}
+      <form method="POST" enctype="multipart/form-data">
+        <input class="file-input" type="file" name="file" accept=".csv">
+        <input class="submit-button" type="submit" value="Upload">
+      </form>
+    </div>
+  </body>
 </html>

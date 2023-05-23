@@ -60,7 +60,7 @@ def process_data(file):
 
     # Return the insights and graphs
     return {
-        'Total Amount Sent': total_amount_sent,
+        'Total Amount Sent': format(total_amount_sent,".2f"),
         'Total Transactions': transaction_count,
         'Payment Methods': payment_methods,
         'Sending Countries': sending_countries,

@@ -3,6 +3,16 @@
 <head>
     <title>Remittances Data Insights</title>
     <style>
+
+        .container {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #f4f4f4;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -34,10 +44,11 @@
     </style>
 </head>
 <body>
+  <div class="container">
     <h1>Remittances Data Insights</h1>
     <div class="graph">
         <h2>Summary:</h2>
-        <p>Total Amount Sent: {{ insights['Total Amount Sent'] }}</p>
+        <p>Total Amount Sent: ${{ insights['Total Amount Sent'] }}</p>
         <p>Total Transactions: {{ insights['Total Transactions'] }}</p>
     </div>
     
@@ -60,5 +71,6 @@
         <h2>Transaction Statuses:</h2>
         <img src="data:image/png;base64,{{ insights['Transaction Statuses Graph'] }}" alt="Transaction Statuses Graph">
     </div>
+  </div>
 </body>
 </html>

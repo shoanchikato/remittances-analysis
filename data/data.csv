@@ -1,13 +1,13 @@
 Date,Amount Sent,Name,Surname,Transaction Status,Time,Payment Method,Reason for Transfer,Sending Country,Receiving Country,Delivery Method
 2023-01-01,500,John,Doe,Completed,10:00:00,Bank Transfer,Family Support,USA,India,Bank Deposit
-2023-02-01,600,Jane,Smith,Completed,11:30:00,Online Payment,Education,UK,Philippines,Cash Pickup
+2023-02-01,600,Jane,Smith,Failed,11:30:00,Online Payment,Education,UK,Philippines,Cash Pickup
 2023-03-01,450,David,Johnson,Completed,14:45:00,Bank Transfer,Investment,Canada,Mexico,Mobile Wallet
 2023-04-01,700,Sarah,Williams,Completed,16:20:00,Cash,Family Support,France,Nigeria,Bank Deposit
-2023-05-01,550,Michael,Brown,Completed,09:15:00,Online Payment,Education,Australia,China,Cash Pickup
+2023-05-01,550,Michael,Brown,Failed,09:15:00,Online Payment,Education,Australia,China,Cash Pickup
 2023-06-01,800,Emily,Jones,Completed,12:00:00,Bank Transfer,Family Support,Germany,Philippines,Mobile Wallet
 2023-07-01,350,Robert,Miller,Completed,13:45:00,Cash,Investment,Spain,India,Bank Deposit
 2023-08-01,900,Olivia,Davis,Completed,15:30:00,Online Payment,Family Support,Italy,Nigeria,Cash Pickup
-2023-09-01,600,William,Moore,Completed,17:00:00,Bank Transfer,Education,USA,Mexico,Mobile Wallet
+2023-09-01,600,William,Moore,Failed,17:00:00,Bank Transfer,Education,USA,Mexico,Mobile Wallet
 2023-10-01,750,Sophia,Taylor,Completed,10:30:00,Online Payment,Family Support,UK,China,Bank Deposit
 2023-11-01,420,Josephine,Anderson,Completed,14:10:00,Cash,Family Support,Canada,Philippines,Cash Pickup
 2023-12-01,580,Andrew,Wilson,Completed,16:45:00,Online Payment,Education,Australia,India,Bank Deposit

@@ -35,9 +35,11 @@
 </head>
 <body>
     <h1>Remittances Data Insights</h1>
-    <h2>Summary:</h2>
-    <p>Total Amount Sent: {{ insights['Total Amount Sent'] }}</p>
-    <p>Total Transactions: {{ insights['Total Transactions'] }}</p>
+    <div class="graph">
+        <h2>Summary:</h2>
+        <p>Total Amount Sent: {{ insights['Total Amount Sent'] }}</p>
+        <p>Total Transactions: {{ insights['Total Transactions'] }}</p>
+    </div>
     
     <div class="graph">
         <h2>Payment Methods:</h2>

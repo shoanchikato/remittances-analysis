@@ -58,6 +58,8 @@ python app.py
 
 5. The application will process the data and display insights and visualizations on the webpage.
 
+6. Demo CSV file in data folder
+
 ## Docker
 
 Alternatively, you can use Docker to run the application. Make sure you have Docker installed and running.

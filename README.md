@@ -20,7 +20,7 @@ The problem identified is the need for better analysis and understanding of remi
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/remittances-analysis.git
+git clone https://github.com/shoanchikato/remittances-analysis.git
 ```
 
 2. Navigate to the project directory:
